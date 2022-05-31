@@ -5,15 +5,13 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.remote.tracing.EventAttribute.setValue;
 
-public class domachka_3_autotest {
+public class HomeworkThreeTest {
 
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-
     }
 
     @Test
@@ -27,6 +25,7 @@ public class domachka_3_autotest {
         $("#userEmail").setValue("mihail@mail.ru");
         $("#userNumber").setValue("user123");
         $("#currentAddress").setValue("Miami");
+        $("#submit").click();
     }
 }
 
