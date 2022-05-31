@@ -19,7 +19,7 @@ public class HomeworkThreeTest {
     void successfulTest() {
         open("/automation-practice-form");
         //executeJavaScript("$('footer').remove()");
-        executeJavaScript("$('#fixedban').remove()");
+        //executeJavaScript("$('#fixedban').remove()");
 
         //шаги
         $("#firstName").setValue("Mihail");
@@ -31,12 +31,13 @@ public class HomeworkThreeTest {
         $(byText("Music")).click();
         //(календарь)
         $("#dateOfBirthInput").click();
-        $("#react-datepicker__month-select").click();
-        $(byText("Aprill")).click();
-        $("#react-datepicker__year-select").click();
+        $(".react-datepicker__month-select").click();
+        $(byText("April")).click();
+        $(".react-datepicker__year-select").click();
         $(byText("2020")).click();
         $(byText("10")).click();
         //(календарь)
+        $(".subjects-auto-complete__value-container").sendKeys("Arts");
         $("#submit").click();
     }
 }
