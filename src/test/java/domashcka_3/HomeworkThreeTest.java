@@ -48,9 +48,16 @@ public class HomeworkThreeTest {
         $("#submit").click();
 
         //проверки
-        $(".modal-content").shouldHave(text("Mihail Lubeznow"), text("mihail@mail.ru"),
-                text("Male"), text("1234567890"), text("10 April,2020"), text("Maths"),
-                text("Music"), text("1.jpg"), text("Miami"), text("NCR Noida"));
+        $(".modal-content").shouldHave(text("Mihail Lubeznow"),
+                text("mihail@mail.ru"),
+                text("Male"),
+                text("1234567890"),
+                text("10 April,2020"),
+                text("Maths"),
+                text("Music"),
+                text("1.jpg"),
+                text("Miami"),
+                text("NCR Noida"));
     }
 }
 
