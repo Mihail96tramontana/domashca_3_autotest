@@ -40,7 +40,7 @@ public class HomeworkThreeTest {
         $(byText("2020")).click();
         $(byText("10")).click();
         //(календарь)
-        $("#uploadPicture").uploadFile(new File("src/test/java/resources/1.jpg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/1.jpg"));
         $("#subjectsInput").sendKeys("m");
         $(byText("Maths")).click();
         $("#react-select-3-input").val("NCR").pressEnter();
