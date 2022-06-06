@@ -30,8 +30,8 @@ public class HomeworkThreeTest {
         $("#userEmail").setValue("mihail@mail.ru");
         $("#userNumber").setValue("1234567890");
         $("#currentAddress").setValue("Miami");
-        $(byText("Male")).click();
-        $(byText("Music")).click();
+        $(byText("Male")).click(); // чекбокс
+        $(byText("Music")).click(); // чекбокс
         //(календарь)
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").click();
@@ -40,9 +40,9 @@ public class HomeworkThreeTest {
         $(byText("2020")).click();
         $(byText("10")).click();
         //(календарь)
-        $("#uploadPicture").uploadFile(new File("src/test/resources/1.jpg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/1.jpg")); // загрузка файла
         $("#subjectsInput").sendKeys("m");
-        $(byText("Maths")).click();
+        $(byText("Maths")).pressEnter();
         $("#react-select-3-input").val("NCR").pressEnter();
         $("#react-select-4-input").val("Noida").pressEnter();
         $("#submit").click();
