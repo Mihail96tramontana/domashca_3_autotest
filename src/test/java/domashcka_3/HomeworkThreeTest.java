@@ -41,8 +41,8 @@ public class HomeworkThreeTest {
         $(byText("10")).click();
         //(календарь)
         $("#uploadPicture").uploadFile(new File("src/test/resources/1.jpg")); // загрузка файла
-        $("#subjectsInput").sendKeys("m");
-        $(byText("Maths")).pressEnter();
+        $("#subjectsInput").setValue("Maths").pressEnter();
+        //$(byText("Maths")).pressEnter();
         $("#react-select-3-input").val("NCR").pressEnter();
         $("#react-select-4-input").val("Noida").pressEnter();
         $("#submit").click();
